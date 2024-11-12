@@ -1,9 +1,9 @@
 === Bus Ticket Booking with Seat Reservation – WpBusTicketly | WordPress plugin ===
-Contributors: magepeopleteam, aamahin
+Contributors: magepeopleteam, aamahin, hamidxazad
 Tags: bus ticket booking with seat reservation,bus ticket booking for wordpress, woocommerce seat reservation for wordpress woocommerce
 Requires at least: 4.5
 Stable tag: trunk
-Tested up to: 6.6
+Tested up to: 6.4
 Requires PHP: 7.0
 WC requires at least: 3.0
 WC tested up to: 4.9
@@ -309,29 +309,12 @@ Design issue fixed*
 Some minor bug fixed
 Design issue fixed*
 
-= 5.3.6 =
+= 3.6 =
 * Code Optimize
 Some minor bug fixed
 welcome page adding
 global offday settings*
 
-= 5.3.7 =
+= 3.7 =
 *Code Optimize
-Some minor bug fixed*
-
-= 5.3.8 =
-*Code Optimize.
-Pricing Issue fixed,
-Search list page layout issue fixed. 
-New Translation string added
-Security Updated.
-Some minor bug fixed*
-
-= 5.3.9 =
-Nonce issue fixed
-Some minor bug fixed*
-
-
-= 5.4.2 =
-Security issue fixed
 Some minor bug fixed*
