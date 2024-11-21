@@ -1,9 +1,9 @@
 === Bus Ticket Booking with Seat Reservation – WpBusTicketly | WordPress plugin ===
-Contributors: magepeopleteam, aamahin, hamidxazad
+Contributors: magepeopleteam, aamahin
 Tags: bus ticket booking with seat reservation,bus ticket booking for wordpress, woocommerce seat reservation for wordpress woocommerce
 Requires at least: 4.5
 Stable tag: trunk
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.0
 WC requires at least: 3.0
 WC tested up to: 4.9
@@ -15,14 +15,15 @@ Offer the convenience of seat selection and reservation on your WordPress websit
 == Description ==
 Make the ticketing process effortless and convenient for travelers with our customized bus ticket booking plugin.
 
-WpBusTicketly is a [WordPress ticketing system](https://mage-people.com/product/addon-bus-ticket-booking-with-seat-reservation-pro/) that comes with a reservation system.
+WpBusTicketly is a [WordPress Transportation ticketing system](https://mage-people.com/product/addon-bus-ticket-booking-with-seat-reservation-pro/) that comes with a reservation system.
 
 Integrated with WooCommerce, enjoy diverse payment gateways for stress-free transactions. Your gateway to hassle-free bus adventures!
 
 Enjoy hassle-free payments, Customize unique routes, set dynamic prices, and personalize booking forms in one place.
 
 ## Explore The Demo:
-&#9989;  [Live Demo](https://bus.mage-people.com/)
+&#9989;  [Live Demo for Transportation with Seat Plan](https://bus.mage-people.com/)
+&#9989;  [Live Demo for Transportation without Seat Plan ](https://withoutseatplan.mage-people.com/)
 &#9989;  [Online Documentation](https://docs.mage-people.com/bus-ticket-booking-with-seat-reservation/)
 &#9989;  [Buy PRO Addon](https://mage-people.com/product/addon-bus-ticket-booking-with-seat-reservation-pro/)
 
@@ -125,8 +126,6 @@ Rest assured, we provide top-notch support for our plugin. With full confidence 
 
 
 **CHECKOUT OUR OTHER PLUGINS** 
-- [Multipurpose Ticket Booking Manager (Bus/Train/Ferry/Boat/Shuttle)
-](https://wordpress.org/plugins/bus-booking-manager/)
 - [Bus Ticket Booking with Seat Reservation](https://wordpress.org/plugins/bus-ticket-booking-with-seat-reservation/)
 - [Woocommerce Events Manager](https://wordpress.org/plugins/mage-eventpress/)
 - [Advanced – Deposit & Partial Payments](https://wordpress.org/plugins/advanced-partial-payment-or-deposit-for-woocommerce/)

@@ -28,6 +28,12 @@
 			public static function text_pickup_point() { return esc_html__('Pickup Point', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_drop_off() { return esc_html__('Drop-Off', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_drop_off_point() { return esc_html__('Drop-Off Point', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function text_pin() { return esc_html__('PIN', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function text_bus_type() { return esc_html__('Bus Type', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function text_attendee_id() { return esc_html__('Attendee ID', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function text_order_status() { return esc_html__('Order Status', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function text_payment_method() { return esc_html__('Payment Method', 'bus-ticket-booking-with-seat-reservation'); }
+			
 			public static function text_return_trip() { return esc_html__('Return Trip', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_upper_deck() { return esc_html__('Upper Deck', 'bus-ticket-booking-with-seat-reservation'); }
 			//*************************//
@@ -68,6 +74,7 @@
 			//*************************//
 			public static function text_action() { return esc_html__('Action', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_available() { return esc_html__('Seats Available', 'bus-ticket-booking-with-seat-reservation'); }
+			public static function duration_text() { return esc_html__('Duration :', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_view_seat() { return esc_html__('View Seats', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_close_seat() { return esc_html__('Close Seat', 'bus-ticket-booking-with-seat-reservation'); }
 			public static function text_book_now() { return esc_html__('Book Now', 'bus-ticket-booking-with-seat-reservation'); }

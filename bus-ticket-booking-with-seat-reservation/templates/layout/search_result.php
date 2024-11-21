@@ -46,14 +46,30 @@ if (sizeof($bus_ids) > 0) {
             return strtotime($a['all_info']['bp_time']) - strtotime($b['all_info']['bp_time']);
         });
 
-        // Now loop through the sorted data
-        foreach ($bus_data as $bus) {
-            $bus_id = $bus['bus_id'];
-            $all_info = $bus['all_info'];
-            $bus_count++;
-            $price = $all_info['price'];
+foreach ($bus_data as $bus) {
+    $bus_id = $bus['bus_id'];
+    $all_info = $bus['all_info'];
+    $bus_count++;
+    $price = $all_info['price'];
+    
+    // Check if next_day exists and set a default value if not
+    $next_day = isset($all_info['next_day']) ? $all_info['next_day'] : '0'; // Default to '0' if not set
+    $bp_time = $all_info['bp_time'];
+    $dp_time = $all_info['dp_time'];
+    
+    // Adjust dp_time if next_day is '1'
+    if ($next_day == '1') {
+        $dp_timestamp += 24 * 60 * 60; // Add 24 hours in seconds
+    }
 
-        ?>
+    $bp_timestamp = strtotime($bp_time);
+    $dp_timestamp = strtotime($dp_time);
+    $duration_seconds = $dp_timestamp - $bp_timestamp;
+
+    $duration_hours = floor($duration_seconds / 3600);
+    $duration_minutes = floor(($duration_seconds % 3600) / 60);
+    $duration_formatted = "{$duration_hours} H {$duration_minutes} M";
+    ?>
             <div class="wbtm-bust-list <?php echo esc_attr(MP_Global_Function::check_product_in_cart($bus_id) ? 'in_cart' : ''); ?>">
                 <div class="wbtm-bus-image ">
                     <?php MP_Custom_Layout::bg_image($bus_id); ?>
@@ -71,6 +87,8 @@ if (sizeof($bus_ids) > 0) {
                         <i class="fas fa-map-marker-alt"></i>
                         <?php echo esc_html($all_info['dp']) . ' ' . esc_html($all_info['dp_time'] ? '(' . MP_Global_Function::date_format($all_info['dp_time'], 'time') . ')' : ''); ?>
                     </h6>
+                    <i class="fas fa-clock"></i> <strong><?php echo WBTM_Translations::duration_text(); ?><?php echo esc_html($duration_formatted); ?> </strong>
+                </h6>
                 </div>
                 <div class="wbtm-seat-info text-center">
                     <div>

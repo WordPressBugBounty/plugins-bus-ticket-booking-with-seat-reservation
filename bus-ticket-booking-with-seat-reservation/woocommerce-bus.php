@@ -3,7 +3,7 @@
 	 * Plugin Name: Bus Ticket Booking with Seat Reservation
 	 * Plugin URI: http://mage-people.com
 	 * Description: A Complete Bus Ticketing System for WordPress & WooCommerce
-	 * Version: 5.4.0
+	 * Version: 5.4.1
 	 * Author: MagePeople Team
 	 * Author URI: http://www.mage-people.com/
 	 * Text Domain: bus-ticket-booking-with-seat-reservation
@@ -28,13 +28,12 @@
 					define('WBTM_PLUGIN_URL', plugins_url() . '/' . plugin_basename(dirname(__FILE__)));
 				}
 				if (!defined('WBTM_PLUGIN_DATA')) {
-					define('WBTM_PLUGIN_DATA', get_plugin_data(__FILE__));
+					// define('WBTM_PLUGIN_DATA', get_plugin_data(__FILE__));
 				}
 				require_once WBTM_PLUGIN_DIR . '/mp_global/MP_Global_File_Load.php';
 			}
 			private function load_plugin() {
 				if (MP_Global_Function::check_woocommerce() == 1) {
-					$this->appsero_init_tracker();
 					$this->setBusPermission();
 					add_filter('plugin_action_links', array($this, 'wbtm_plugin_action_link'), 10, 2);
 					add_filter('plugin_row_meta', array($this, 'wbtm_plugin_row_meta'), 10, 2);
@@ -57,13 +56,6 @@
 				if ($plugin == plugin_basename(__FILE__) && $wbtm_quick_setup_done != 'yes') {
 					exit(wp_redirect(admin_url('admin.php?post_type=wbtm_bus&page=wbtm_quick_setup')));
 				}
-			}
-			public function appsero_init_tracker() {
-				if (!class_exists('Appsero\Client')) {
-					require_once __DIR__ . '/lib/appsero/src/Client.php';
-				}
-				$client = new Appsero\Client('183b453a-7a2a-47f6-aa7e-10bf246d1d44', 'Bus Ticket Booking with Seat Reservation', __FILE__);
-				$client->insights()->init();
 			}
 			function wbtm_plugin_row_meta($links_array, $plugin_file_name) {
 				if (strpos($plugin_file_name, basename(__FILE__))) {
