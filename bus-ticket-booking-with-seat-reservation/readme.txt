@@ -15,7 +15,7 @@ Offer the convenience of seat selection and reservation on your WordPress websit
 == Description ==
 Make the ticketing process effortless and convenient for travelers with our customized bus ticket booking plugin.
 
-WpBusTicketly is a [WordPress Transportation ticketing system](https://mage-people.com/product/addon-bus-ticket-booking-with-seat-reservation-pro/) that comes with a reservation system.
+WpBusTicketly is a [WordPress ticketing system](https://mage-people.com/product/addon-bus-ticket-booking-with-seat-reservation-pro/) that comes with a reservation system.
 
 Integrated with WooCommerce, enjoy diverse payment gateways for stress-free transactions. Your gateway to hassle-free bus adventures!
 
