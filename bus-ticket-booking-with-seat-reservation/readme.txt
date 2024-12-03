@@ -3,7 +3,7 @@ Contributors: magepeopleteam, aamahin
 Tags: bus ticket booking with seat reservation,bus ticket booking for wordpress, woocommerce seat reservation for wordpress woocommerce
 Requires at least: 4.5
 Stable tag: trunk
-Tested up to: 6.7
+Tested up to: 6.7.1
 Requires PHP: 7.0
 WC requires at least: 3.0
 WC tested up to: 4.9
@@ -86,7 +86,10 @@ Experience smooth functionality on multiple devices and screen sizes with our pl
 [wbtm-bus-search-form]
 `
 This shortcode allows you to add a search form to any page where customers can search for bus tickets and buy ticket
-
+if someone like to add left filter option then need to add new parameter for left-filter
+`
+[wbtm-bus-search-form left-filter="yes"]
+`
 We have a dummy import option and guidelines. if you check the welcome link left sidebar of our plugin. you will dummy import guidelines.
 
 

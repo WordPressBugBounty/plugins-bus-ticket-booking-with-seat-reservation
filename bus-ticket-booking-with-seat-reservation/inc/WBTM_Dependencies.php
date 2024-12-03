@@ -17,6 +17,15 @@
 				add_action('add_mp_frontend_enqueue', array($this, 'frontend_enqueue'), 90);
 				add_filter('single_template', array($this, 'load_single_template'), 10);
 				add_filter('template_include', array($this, 'load_template'));
+				add_filter('register_post_type_args', array($this, 'modify_bus_slug'), 5, 2); 
+			}
+			public function modify_bus_slug($args, $post_type) {
+				if ('wbtm_bus' === $post_type) {
+					$slug = MP_Global_Function::get_settings( 'wbtm_general_settings', 'slug', 'bus' );
+					
+					$args['rewrite']['slug'] = $slug;
+				}
+				return $args;
 			}
 			public function language_load(): void {
 				$plugin_dir = basename(dirname(__DIR__)) . "/languages/";
@@ -38,7 +47,9 @@
 			}
 			public function global_enqueue() {
 				wp_enqueue_style('wbtm_global', WBTM_PLUGIN_URL . '/assets/global/wbtm_global.css', array(), time());
+				wp_enqueue_style('wbtm_bus_left_filter', WBTM_PLUGIN_URL . '/assets/global/wbtm_bus_left_filter.css', array(), time());
 				wp_enqueue_script('wbtm_global', WBTM_PLUGIN_URL . '/assets/global/wbtm_global.js', array('jquery'), time(), true);
+				wp_enqueue_script('wbtm_bus_left_filter', WBTM_PLUGIN_URL . '/assets/global/wbtm_bus_left_filter.js', array('jquery'), time(), true);
 				do_action('add_wbtm_common_script');
 			}
 			public function admin_enqueue() {
