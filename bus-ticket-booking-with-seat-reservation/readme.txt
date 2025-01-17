@@ -320,3 +320,8 @@ global offday settings*
 = 3.7 =
 *Code Optimize
 Some minor bug fixed*
+
+
+= 5.4.4 =
+*Code Optimize
+Security issue fixed*
