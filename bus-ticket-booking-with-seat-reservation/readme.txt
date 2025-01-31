@@ -88,7 +88,7 @@ Experience smooth functionality on multiple devices and screen sizes with our pl
 This shortcode allows you to add a search form to any page where customers can search for bus tickets and buy ticket
 if someone like to add left filter option then need to add new parameter for left-filter
 `
-[wbtm-bus-search-form left-filter="yes"]
+[wbtm-bus-search-form left_filter='on' left_filter_type='on' left_filter_operator='on' left_filter_boarding='on']
 `
 We have a dummy import option and guidelines. if you check the welcome link left sidebar of our plugin. you will dummy import guidelines.
 
@@ -320,8 +320,3 @@ global offday settings*
 = 3.7 =
 *Code Optimize
 Some minor bug fixed*
-
-
-= 5.4.4 =
-*Code Optimize
-Security issue fixed*
