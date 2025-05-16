@@ -3,13 +3,12 @@
 	 * Plugin Name: Bus Ticket Booking with Seat Reservation
 	 * Plugin URI: http://mage-people.com
 	 * Description: A Complete Bus Ticketing System for WordPress & WooCommerce
-	 * Version: 5.4.8
+	 * Version: 5.4.9
 	 * Author: MagePeople Team
 	 * Author URI: http://www.mage-people.com/
 	 * Text Domain: bus-ticket-booking-with-seat-reservation
 	 * Domain Path: /languages/
 	 */
-
 // If this file is called directly, abort.
 	if (!defined('WPINC')) {
 		die;
